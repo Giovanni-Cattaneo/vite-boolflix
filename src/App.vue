@@ -41,9 +41,9 @@ export default {
   <main>
     <ul>
       <li v-for="movie in state.movies">
-        Titolo: {{ movie.title }} -
-        Titolo Originale: {{ movie.original_title }} -
-        Lingua originale: {{ movie.original_language }} -
+        Titolo: {{ movie.title }} /
+        Titolo Originale: {{ movie.original_title }} /
+        Lingua originale: {{ movie.original_language }} /
         Valutazione: {{ movie.popularity }}
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
