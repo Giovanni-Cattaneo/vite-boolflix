@@ -40,7 +40,7 @@ export default {
 
   <main>
     <ul>
-      <li v-for="movie in state.movies">
+      <li v-for="movie in state.movies" :key="movie.id">
         Titolo: {{ movie.title }} /
         Titolo Originale: {{ movie.original_title }} /
         Lingua originale: {{ movie.original_language }} /
