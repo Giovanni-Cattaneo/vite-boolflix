@@ -53,4 +53,8 @@ export default {
 
 </template>
 
-<style></style>
+<style>
+ul {
+  list-style: none;
+}
+</style>
