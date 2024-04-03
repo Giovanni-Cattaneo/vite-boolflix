@@ -33,13 +33,15 @@ export default {
 <template>
   <header>
     <h1>{{ state.message }}</h1>
-    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchMovie">
+    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchMovie"
+      @keyup.enter="search()">
     <button @click="search()">Vai</button>
   </header>
 
   <main>
     <ul>
-      <li v-for="movie in state.movies">{{ movie.original_title }}</li>
+      <li v-for="movie in state.movies">{{ movie.title }} {{ movie.original_title }} {{ movie.original_language }} {{
+      movie.popularity }}</li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>
   </main>
