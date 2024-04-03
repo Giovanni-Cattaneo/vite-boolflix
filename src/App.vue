@@ -9,9 +9,16 @@ export default {
   },
   methods: {
     search() {
-      console.log(state.searchMovie)
-      state.api_movie_url += state.searchMovie
+      const searchSingleMovie = state.searchMovie.split(' ') // con questo dividiamo il testo, mettendo la divisione con spazio non dividiamo in singole lettere
+
+      const searchText = searchSingleMovie.join('+')
+
+      state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&query=${searchText}`
       state.callApi()
+
+      console.log(state.movie)
+
+      state.searchMovie = ""
     }
   },
 
