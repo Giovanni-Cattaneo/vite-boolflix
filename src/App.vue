@@ -9,6 +9,8 @@ export default {
   }
 }
 
+console.log(state.movies)
+
 </script>
 
 <template>
