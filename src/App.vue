@@ -13,10 +13,10 @@ export default {
 
       const searchText = searchSingleMovie.join('+')
 
-      state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&query=${searchText}`
+      state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${searchText}`
       state.callApi()
 
-      console.log(state.movie)
+      console.log(state.movies)
 
       state.searchMovie = ""
     }
