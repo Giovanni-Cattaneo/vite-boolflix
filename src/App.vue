@@ -7,6 +7,12 @@ export default {
       state: state,
     }
   },
+  methods: {
+    search() {
+      console.log(state.searchMovie)
+    }
+  },
+
   mounted() {
     //state.callApi() facciamo la chiamata api al caricamento della pagina per ora
   }
@@ -18,8 +24,8 @@ export default {
 <template>
   <header>
     <h1>{{ state.message }}</h1>
-    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv">
-    <button @click="state.callApi()">Vai</button>
+    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchMovie">
+    <button @click="search()">Vai</button>
   </header>
 
   <main>
