@@ -10,6 +10,8 @@ export default {
   methods: {
     search() {
       console.log(state.searchMovie)
+      state.api_movie_url += state.searchMovie
+      state.callApi()
     }
   },
 
