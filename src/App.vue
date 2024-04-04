@@ -56,26 +56,4 @@ export default {
 
 </template>
 
-<style>
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-
-  & li {
-    border: 1px solid white;
-    max-width: 342px;
-    padding-bottom: 1rem;
-  }
-}
-
-.flags {
-  width: 50px;
-  height: 30px;
-}
-
-.fa-star {
-  color: goldenrod;
-}
-</style>
+<style></style>

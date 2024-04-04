@@ -36,4 +36,26 @@ export default {
     <span v-else>Spiacente non ci sono titoli corrispondenti alla tua richiesta</span>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped>
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & li {
+        border: 1px solid white;
+        max-width: 342px;
+        padding-bottom: 1rem;
+    }
+}
+
+.flags {
+    width: 50px;
+    height: 30px;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+</style>
