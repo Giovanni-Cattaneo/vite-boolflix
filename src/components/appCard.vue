@@ -17,7 +17,7 @@ export default {
             <div class="card-top">
                 <img :src="'https://image.tmdb.org/t/p/w342' + product.poster_path" alt="">
             </div>
-            <div class="card-detail">
+            <div class="card-detail d-flex">
                 <p>Titolo: {{ product.title }} </p>
                 <p>Titolo Originale: {{ product.original_title }} </p>
                 <span v-if="product.original_language in state.flags">
@@ -48,6 +48,7 @@ export default {
 
     .card {
         border: 0.5px solid white;
+        position: relative;
     }
 
     .card-top {
@@ -65,17 +66,22 @@ export default {
     }
 
     .card-detail {
-        display: none;
         position: absolute;
+        top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.555);
+        background-color: rgba(0, 0, 0, 0.63);
         z-index: 1;
         color: antiquewhite;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
     }
 
     .card-detail:hover {
-        display: block;
+        display: flex;
     }
 
     .fa-star {
