@@ -17,7 +17,7 @@ export default {
             <div class="card-top">
                 <img :src="'https://image.tmdb.org/t/p/w342' + product.poster_path" alt="">
             </div>
-            <div class="card-detail d-flex">
+            <div class="card-detail">
                 <p>Titolo: {{ product.title }} </p>
                 <p>Titolo Originale: {{ product.original_title }} </p>
                 <span v-if="product.original_language in state.flags">
@@ -77,10 +77,13 @@ export default {
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        display: none;
+        transition: opacity 0.5s;
+        text-align: center;
 
     }
 
-    .card-detail:hover {
+    .card:hover .card-detail {
         display: flex;
     }
 
