@@ -19,6 +19,12 @@ export default {
       console.log(state.movies)
 
       state.searchMovie = ""
+    },
+
+    findFlags() {
+      if (state.movies.original_language in state.flags) {
+        //qui dobbiamo mettere che se la key della lingua è compresa nelle flags dobbiamo restituire l'imkmagine invece della stringa
+      }
     }
   },
 
