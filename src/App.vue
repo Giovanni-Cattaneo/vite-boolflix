@@ -48,14 +48,15 @@ export default {
   <main>
     <ul v-if="state.products.length > 0">
       <li v-for="product in state.products" :key="product.id">
-        <span>Titolo: {{ product.title }} /</span>
-        <span>Titolo Originale: {{ product.original_title }} /</span>
+        <img :src="'https://image.tmdb.org/t/p/w342' + product.poster_path" alt="">
+        <p>Titolo: {{ product.title }} </p>
+        <p>Titolo Originale: {{ product.original_title }} </p>
         <!-- <span v-show="movie.original_language in state.flags">Lingua originale: {{ movie.original_language }} /</span> -->
-        <span v-if="product.original_language in state.flags">
-          <img v-bind:src="state.flags[product.original_language]" alt="">/
-        </span>
-        <span v-else> Lingua originale: {{ product.original_language }}/</span>
-        <span>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }}</span>
+        <p v-if="product.original_language in state.flags">
+          <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
+        </p>
+        <p v-else> Lingua originale: {{ product.original_language }}/</p>
+        <p>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }}</p>
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>
@@ -69,7 +70,7 @@ ul {
   list-style: none;
 }
 
-img {
+.flags {
   width: 50px;
   height: 30px;
 }
