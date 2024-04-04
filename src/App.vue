@@ -10,24 +10,26 @@ export default {
   methods: {
     search() {
       this.findFlags()
-      const searchSingleMovie = state.searchMovie.split(' ') // con questo dividiamo il testo, mettendo la divisione con spazio non dividiamo in singole lettere
+      const searchSingleProducts = state.searchProducts.split(' ') // con questo dividiamo il testo, mettendo la divisione con spazio non dividiamo in singole lettere
 
-      const searchText = searchSingleMovie.join('+') //riuniamo le parole con un separatore + perchè sia acettato dall'api url
+      const searchText = searchSingleProducts.join('+') //riuniamo le parole con un separatore + perchè sia acettato dall'api url
 
       state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${searchText}`
-      state.callApi()
+      state.api_tv_series_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${searchText}`
 
-      console.log(state.movies)
+      state.callProductsApi()
 
-      state.searchMovie = ""
+      console.log(state.products)
+
+      state.searchProducts = ""
     },
 
     findFlags() {
-      if (state.movies.original_language in state.flags) {
+      if (state.products.original_language in state.flags) {
         //qui dobbiamo mettere che se la key della lingua è compresa nelle flags dobbiamo restituire l'imkmagine invece della stringa
         return state.flags
       } else {
-        return state.movies.original_language
+        return state.products.original_language
       }
     }
   },
@@ -43,22 +45,22 @@ export default {
 <template>
   <header>
     <h1>{{ state.message }}</h1>
-    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchMovie"
+    <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchProducts"
       @keyup.enter="search()">
     <button @click="search()">Vai</button>
   </header>
 
   <main>
     <ul>
-      <li v-for="movie in state.movies" :key="movie.id">
-        <span>Titolo: {{ movie.title }} /</span>
-        <span>Titolo Originale: {{ movie.original_title }} /</span>
+      <li v-for="product in state.products" :key="product.id">
+        <span>Titolo: {{ product.title }} /</span>
+        <span>Titolo Originale: {{ product.original_title }} /</span>
         <!-- <span v-show="movie.original_language in state.flags">Lingua originale: {{ movie.original_language }} /</span> -->
-        <span v-if="movie.original_language in state.flags">
-          <img v-bind:src="state.flags[movie.original_language]" alt="">/
+        <span v-if="product.original_language in state.flags">
+          <img v-bind:src="state.flags[product.original_language]" alt="">/
         </span>
-        <span v-else> Lingua originale: {{ movie.original_language }}/</span>
-        <span>Valutazione: {{ Math.ceil(movie.vote_average / 2).toFixed(0) }}</span>
+        <span v-else> Lingua originale: {{ product.original_language }}/</span>
+        <span>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }}</span>
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>

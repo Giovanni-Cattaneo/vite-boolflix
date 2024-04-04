@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const state = reactive({
     message: "Welcome to Boolflix",
-    movies: '',
+    products: '',
     flags: {
         en: '../public/flags/1x1/us.svg',
         it: '../public/flags/1x1/it.svg',
@@ -11,12 +11,18 @@ export const state = reactive({
         de: '../public/flags/1x1/de.svg',
         ja: '../public/flags/1x1/jp.svg',
     },
-    searchMovie: "",
+    searchProducts: "",
     api_movie_url: 'https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=',
-    callApi() {
-        axios.get(this.api_movie_url).then(response => {
+    api_tv_series_url: 'https://api.themoviedb.org/3/search/tv?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=',
+    callProductsApi() {
+        axios.get(this.api_movie_url).then(response1 => {
             //console.log(response)
-            this.movies = response.data.results
+            this.products = response1.data.results
+        })
+
+        axios.get(this.api_tv_series_url).then(response2 => {
+            //console.log(response)
+            this.products = response2.data.results
         })
     },
 })
