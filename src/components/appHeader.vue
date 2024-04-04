@@ -35,8 +35,7 @@ export default {
 <template>
     <header>
         <div class="d-flex">
-            <img class="logo"
-                src="C:\Users\Giovanni\Desktop\Boolean\vite-boolflix\public\Beats_Electronics_logo.svg.png" alt="">
+            <img class="logo" src="../../public/Beats_Electronics_logo.svg.png" alt="">
             <h2>{{ state.message }}</h2>
         </div>
 
