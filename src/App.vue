@@ -68,6 +68,9 @@ export default {
 <style>
 ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .flags {
