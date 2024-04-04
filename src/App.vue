@@ -56,11 +56,14 @@ export default {
           <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
         </p>
         <p v-else> Lingua originale: {{ product.original_language }}</p>
-        <p>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }} stelle</p>
-        <p></p>
-        <div v-for="n in Math.ceil(product.vote_average / 2).toFixed(0)" :key="n">
+        <p>Valutazione: {{ Math.ceil(product.vote_average / 2) }} stelle</p>
+        <p>{{ Math.ceil(product.vote_average / 2).length }}</p>
+        <span v-for="n in Math.ceil(product.vote_average / 2)" :key="n">
           <i class="fa-solid fa-star"></i>
-        </div>
+        </span>
+        <span v-for="n in 5 - Math.ceil(product.vote_average / 2)">
+          <i class="fa-regular fa-star"></i>
+        </span>
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>
@@ -76,10 +79,20 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+
+  & li {
+    border: 1px solid white;
+    max-width: 342px;
+    padding-bottom: 1rem;
+  }
 }
 
 .flags {
   width: 50px;
   height: 30px;
+}
+
+.fa-star {
+  color: goldenrod;
 }
 </style>
