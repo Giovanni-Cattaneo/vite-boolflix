@@ -58,7 +58,7 @@ export default {
           <img v-bind:src="state.flags[movie.original_language]" alt="">/
         </span>
         <span v-else> Lingua originale: {{ movie.original_language }}/</span>
-        <span>Valutazione: {{ movie.popularity }}</span>
+        <span>Valutazione: {{ Math.ceil(movie.vote_average / 2).toFixed(0) }}</span>
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>
