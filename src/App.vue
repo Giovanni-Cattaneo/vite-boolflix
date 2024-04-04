@@ -10,16 +10,11 @@ export default {
   methods: {
     search() {
       this.findFlags()
-      const searchSingleProducts = state.searchProducts.split(' ') // con questo dividiamo il testo, mettendo la divisione con spazio non dividiamo in singole lettere
 
-      const searchText = searchSingleProducts.join('+') //riuniamo le parole con un separatore + perchè sia acettato dall'api url
-
-      state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${searchText}`
-      state.api_tv_series_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${searchText}`
+      state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${state.searchProducts.split(' ').join('+')}`
+      state.api_tv_series_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${state.searchProducts.split(' ').join('+')}`
 
       state.callProductsApi()
-
-      console.log(state.products)
 
       state.searchProducts = ""
     },
@@ -51,7 +46,7 @@ export default {
   </header>
 
   <main>
-    <ul>
+    <ul v-if="state.products.length > 0">
       <li v-for="product in state.products" :key="product.id">
         <span>Titolo: {{ product.title }} /</span>
         <span>Titolo Originale: {{ product.original_title }} /</span>

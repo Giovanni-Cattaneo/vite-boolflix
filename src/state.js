@@ -27,6 +27,12 @@ export const state = reactive({
             .then(response2 => {
                 this.tvSeries = response2.data.results;
                 this.products = this.movies.concat(this.tvSeries);
+                this.products = this.products.filter(function (product, index, self) {
+                    return index === self.findIndex(function (p) {
+                        return p.id === product.id;
+                    });
+                });
+                console.log(this.products)
             })
 
     },
