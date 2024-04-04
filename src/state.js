@@ -3,6 +3,8 @@ import axios from 'axios';
 
 export const state = reactive({
     message: "Welcome to Boolflix",
+    movies: '',
+    tvSeries: '',
     products: '',
     flags: {
         en: '../public/flags/1x1/us.svg',
@@ -17,12 +19,13 @@ export const state = reactive({
     callProductsApi() {
         axios.get(this.api_movie_url).then(response1 => {
             //console.log(response)
-            this.products = response1.data.results
+            this.movies = response1.data.results
         })
 
         axios.get(this.api_tv_series_url).then(response2 => {
             //console.log(response)
-            this.products = response2.data.results
+            this.tvSeries = response2.data.results
         })
+        this.products = this.movies.concat(this.tvSeries)
     },
 })
