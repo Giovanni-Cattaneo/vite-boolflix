@@ -9,7 +9,7 @@ export const state = reactive({
         it: '../public/flags/1x1/it.svg',
         fr: '../public/flags/1x1/fr.svg',
         de: '../public/flags/1x1/de.svg',
-        jp: '../public/flags/1x1/jp.svg',
+        ja: '../public/flags/1x1/jp.svg',
     },
     searchMovie: "",
     api_movie_url: 'https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=',
