@@ -21,9 +21,9 @@ export default {
                 <p>Titolo: {{ product.title }} </p>
                 <p>Titolo Originale: {{ product.original_title }} </p>
                 <!-- <span v-show="movie.original_language in state.flags">Lingua originale: {{ movie.original_language }} /</span> -->
-                <p v-if="product.original_language in state.flags">
+                <span v-if="product.original_language in state.flags">
                     <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
-                </p>
+                </span>
                 <p v-else> Lingua originale: {{ product.original_language }}</p>
                 <div class="star-container">
                     <span v-for="n in Math.ceil(product.vote_average / 2)" :key="n">
@@ -36,7 +36,6 @@ export default {
             </div>
 
         </card>
-        <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </div>
     <span v-else>Spiacente non ci sono titoli corrispondenti alla tua richiesta</span>
 </template>
@@ -46,6 +45,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     & card {
         border: 1px solid white;
@@ -56,10 +56,12 @@ export default {
     .card-intestation {
         flex-direction: column;
         align-items: center;
+        gap: 0.2rem;
+        text-align: center;
     }
 
     .flags {
-        width: 50px;
+        width: 100px;
         height: 30px;
     }
 
