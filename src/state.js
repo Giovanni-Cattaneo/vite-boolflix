@@ -12,20 +12,23 @@ export const state = reactive({
         fr: '../public/flags/1x1/fr.svg',
         de: '../public/flags/1x1/de.svg',
         ja: '../public/flags/1x1/jp.svg',
+        es: '../public/flags/1x1/es.svg',
+        da: '../public/flags/1x1/de.svg',
     },
     searchProducts: "",
     api_movie_url: 'https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=',
     api_tv_series_url: 'https://api.themoviedb.org/3/search/tv?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=',
     callProductsApi() {
-        axios.get(this.api_movie_url).then(response1 => {
-            //console.log(response)
-            this.movies = response1.data.results
-        })
+        axios.get(this.api_movie_url)
+            .then(response1 => {
+                this.movies = response1.data.results;
+                return axios.get(this.api_tv_series_url);
+            })
+            .then(response2 => {
+                this.tvSeries = response2.data.results;
+                this.products = this.movies.concat(this.tvSeries);
+            })
 
-        axios.get(this.api_tv_series_url).then(response2 => {
-            //console.log(response)
-            this.tvSeries = response2.data.results
-        })
-        this.products = this.movies.concat(this.tvSeries)
     },
+
 })
