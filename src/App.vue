@@ -26,7 +26,7 @@ export default {
       } else {
         return state.products.original_language
       }
-    }
+    },
   },
 
   mounted() {
@@ -55,11 +55,16 @@ export default {
         <p v-if="product.original_language in state.flags">
           <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
         </p>
-        <p v-else> Lingua originale: {{ product.original_language }}/</p>
-        <p>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }}</p>
+        <p v-else> Lingua originale: {{ product.original_language }}</p>
+        <p>Valutazione: {{ Math.ceil(product.vote_average / 2).toFixed(0) }} stelle</p>
+        <p></p>
+        <div v-for="n in Math.ceil(product.vote_average / 2).toFixed(0)" :key="n">
+          <i class="fa-solid fa-star"></i>
+        </div>
       </li>
       <!-- momentaneamente inutile, impostiamo struttura per vedere i cambiamenti in pagina -->
     </ul>
+    <span v-else>Spiacente non ci sono titoli corrispondenti alla tua richiesta</span>
   </main>
 
 
