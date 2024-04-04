@@ -18,3 +18,13 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  padding-top: 3rem;
+  width: 1280px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}

@@ -58,10 +58,6 @@ header {
     margin: auto;
     padding: 0.3rem 2rem;
 
-    .d-flex {
-        display: flex;
-    }
-
     .inputs {
         gap: 0.8rem;
     }
@@ -69,6 +65,7 @@ header {
     & h2 {
         color: rgb(207, 0, 0);
         font-size: 2rem;
+        align-self: center;
     }
 
     & button {
