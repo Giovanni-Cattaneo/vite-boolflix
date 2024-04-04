@@ -13,14 +13,13 @@ export default {
 
 <template>
     <div class="container" v-if="state.products.length > 0">
-        <div v-for="product in state.products" :key="product.id">
+        <div class="card" v-for="product in state.products" :key="product.id">
             <div class="card-top">
                 <img :src="'https://image.tmdb.org/t/p/w342' + product.poster_path" alt="">
             </div>
-            <div class="card-intestation d-flex">
+            <div class="card-detail">
                 <p>Titolo: {{ product.title }} </p>
                 <p>Titolo Originale: {{ product.original_title }} </p>
-                <!-- <span v-show="movie.original_language in state.flags">Lingua originale: {{ movie.original_language }} /</span> -->
                 <span v-if="product.original_language in state.flags">
                     <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
                 </span>
@@ -47,22 +46,36 @@ export default {
     gap: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    & card {
-        border: 1px solid white;
-        max-width: 342px;
-        padding-bottom: 1rem;
+    .card {
+        border: 0.5px solid white;
     }
 
-    .card-intestation {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.2rem;
-        text-align: center;
+    .card-top {
+        height: 100%;
+
+        & img {
+            height: 100%;
+            width: 342px
+        }
     }
 
     .flags {
         width: 100px;
         height: 30px;
+    }
+
+    .card-detail {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.555);
+        z-index: 1;
+        color: antiquewhite;
+    }
+
+    .card-detail:hover {
+        display: block;
     }
 
     .fa-star {
