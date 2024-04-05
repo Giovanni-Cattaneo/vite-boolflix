@@ -154,8 +154,8 @@ export default {
 </script>
 
 <template>
-    <div class="carousel">
-        <h2>Ecco gli ultimi tittoli aggiunti:</h2>
+    <h2>Ecco gli ultimi tittoli aggiunti:</h2>
+    <div class="carousel d-flex">
         <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="next" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
         <!-- <div class="slider d-flex" tabindex="0">
@@ -192,6 +192,7 @@ export default {
 <style scoped>
 .carousel {
     text-align: center;
+    justify-content: center;
 
 
     & h2 {
@@ -201,6 +202,8 @@ export default {
 
 .card {
     position: relative;
+    max-width: 343px;
+    flex-direction: row;
 }
 
 .card-detail {
@@ -251,6 +254,7 @@ export default {
     padding: 0.5rem;
     background-color: rgba(78, 78, 78, 0.445);
     border: none;
+    z-index: 10;
 }
 
 .next {
@@ -261,6 +265,7 @@ export default {
     padding: 0.5rem;
     background-color: rgba(78, 78, 78, 0.445);
     border: none;
+    z-index: 10;
 }
 
 .slider {
