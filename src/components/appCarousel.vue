@@ -23,7 +23,7 @@ export default {
                     "original_title": "Back to the Future",
                     "overview": "Marty McFly è stato catapultato per errore nel 1955, grazie alla macchina del tempo ideata dal suo amico scienziato Doc. Non avendo più \"carburante\" per poter tornare nel futuro si rivolge alla versione più giovane di Doc, che nonostante l'incredulità iniziale si farà in quattro per aiutarlo. Ma nel 1955 non è solo Doc ad essere più giovane, Marty infatti si imbatte casualmente nei suoi genitori, all'epoca teenager, ma l'incontro aggiungerà altri problemi.",
                     "popularity": 100.149,
-                    "poster_path": "/AkmUoSHkxW9txpzZ52gCcWweEkE.jpg",
+                    "poster_path": "../../public/avatar_wallpaper.jpg",
                     "release_date": "1985-07-03",
                     "title": "Ritorno al futuro",
                     "video": false,
@@ -43,7 +43,7 @@ export default {
                     "original_title": "Back to the Future Part II",
                     "overview": "Il film comincia dove terminava il primo capitolo, ovvero con Marty e Jennifer che partono insieme allo scienziato Doc, inventore della macchina del tempo, per il 2015 allo scopo di evitare che il futuro dei loro figli possa essere in pericolo. Ma la situazione precipita e ad essere in pericolo non è più il futuro, ma il passato. Marty dovrà tornare nuovamente nel 1955 e...",
                     "popularity": 86.178,
-                    "poster_path": "/y86WZGmsiKHZ0HmH1NZRx2iOaP4.jpg",
+                    "poster_path": "../../public/avenersjpg",
                     "release_date": "1989-11-22",
                     "title": "Ritorno al futuro - Parte II",
                     "video": false,
@@ -63,7 +63,7 @@ export default {
                     "original_title": "Back to the Future Part III",
                     "overview": "Per questa terza, conclusiva, puntata della trilogia, Marty McFly è costretto a tornare indietro nel tempo fino al 1885 per salvare Doc, che vi era stato catapultato al termine del secondo capitolo. Questa volta tornare nel futuro sarà ancora più difficile.",
                     "popularity": 47.786,
-                    "poster_path": "/fR29F37jN4y1xapDAcjI9CEgM65.jpg",
+                    "poster_path": "../../public/justice_league.jpg",
                     "release_date": "1990-05-25",
                     "title": "Ritorno al futuro - Parte III",
                     "video": false,
@@ -83,7 +83,7 @@ export default {
                     "original_title": "The Lord of the Rings: The Fellowship of the Ring",
                     "overview": "Bilbo Baggins ha deciso di celebrare il suo centoundicesimo compleanno in maniera molto particolare;alla fine della festa, abbandona parenti, amici, conoscenti e il suo affezionato nipote Frodo, cui lascia ogni cosa. Lo stregone Gandalf insiste perché lo hobbit lasci a Frodo anche il suo anello magico, su cui intende tenere un occhio vigile e fare alcune ricerche, perché potrebbe celare un mistero più inquietante di quanto non sembri. E così è; quello di Bilbo è l'Unico Anello, l'Anello per domarli, il cuore del potere del malefico Signore Oscuro Sauron, che sta tornando a tessere le sue trame di conquista e distruzione. Per impedirgli di vedere realizzato il suo sanguinoso disegno, l'anello dovrà essere distrutto, cosa possibile soltanto nella fornace di Monte Fato, dove Sauron, secoli prima, lo forgiò.",
                     "popularity": 147.99,
-                    "poster_path": "/xvjOBWfm32skiwIAU2iocb6fyC8.jpg",
+                    "poster_path": "../../public/man_of_steel.jpg",
                     "release_date": "2001-12-18",
                     "title": "Il Signore degli Anelli - La compagnia dell'anello",
                     "video": false,
@@ -103,7 +103,7 @@ export default {
                     "original_title": "The Lord of the Rings: The Return of the King",
                     "overview": "Le forze di Sauron hanno attaccato la capitale di Gondor, Minas Tirith, nel suo assedio finale contro l'umanità. Tenuto da un debole sovrintendente, quello che una volta era un fastoso regno non ha mai avuto così bisogno del proprio re. Mentre Gandalf tenta disperatamente di spingere lo smembrato esercito di Gondor ad agire, Thèoden si unisce ai guerrieri di Rohan per combattere assieme a loro. Pieno di coraggio e di appassionata lealtà, l'esercito degli umani non riesce però a tener testa alle numerosissime legioni nemiche che giungono su tutto il regno. Ogni vittoria è accompagnata da un grande sacrificio. Malgrado le numerose perdite, la Compagnia si lancia verso la più grande battaglia mai affrontata, unita dall'unico scopo di riuscire a tenere Sauron distratto e dare a Frodo una occasione per portare a termine la sua spedizione...",
                     "popularity": 122.714,
-                    "poster_path": "/96XilLzI7bijsCG4l7oW6I62oad.jpg",
+                    "poster_path": "../../mission_impossible.jpg",
                     "release_date": "2003-12-01",
                     "title": "Il Signore degli Anelli - Il ritorno del re",
                     "video": false,
@@ -123,7 +123,47 @@ export default {
                     "original_title": "The Lord of the Rings: The Two Towers",
                     "overview": "La Compagnia dell'Anello è divisa, e ogni speranza è riposta ora in Frodo e Sam, che stanno tentando di attraversare non visti i confini di Mordor, tallonati dall'infido Gollum: Aragorn, Gimli e Legolas sono invece sulle tracce di Merry e Pipino, rapiti dagli Uruk-Hai di Saruman e in grave pericolo di vita. Attraverso alterne vicende, raggiungeranno la terra di Rohan e aiuteranno il Re Theoden nella sua guerra contro il traditore Saruman...",
                     "popularity": 107.755,
-                    "poster_path": "/fVKewiBPcY2dQujYEsnQmQ7lfRZ.jpg",
+                    "poster_path": "../../public/ready_player_one.jpg",
+                    "release_date": "2002-12-18",
+                    "title": "Il Signore degli Anelli - Le due torri",
+                    "video": false,
+                    "vote_average": 8.394,
+                    "vote_count": 21003
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg",
+                    "genre_ids": [
+                        12,
+                        14,
+                        28
+                    ],
+                    "id": 121,
+                    "original_language": "en",
+                    "original_title": "The Lord of the Rings: The Two Towers",
+                    "overview": "La Compagnia dell'Anello è divisa, e ogni speranza è riposta ora in Frodo e Sam, che stanno tentando di attraversare non visti i confini di Mordor, tallonati dall'infido Gollum: Aragorn, Gimli e Legolas sono invece sulle tracce di Merry e Pipino, rapiti dagli Uruk-Hai di Saruman e in grave pericolo di vita. Attraverso alterne vicende, raggiungeranno la terra di Rohan e aiuteranno il Re Theoden nella sua guerra contro il traditore Saruman...",
+                    "popularity": 107.755,
+                    "poster_path": "../../public/the_batman.jpg",
+                    "release_date": "2002-12-18",
+                    "title": "Il Signore degli Anelli - Le due torri",
+                    "video": false,
+                    "vote_average": 8.394,
+                    "vote_count": 21003
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg",
+                    "genre_ids": [
+                        12,
+                        14,
+                        28
+                    ],
+                    "id": 121,
+                    "original_language": "en",
+                    "original_title": "The Lord of the Rings: The Two Towers",
+                    "overview": "La Compagnia dell'Anello è divisa, e ogni speranza è riposta ora in Frodo e Sam, che stanno tentando di attraversare non visti i confini di Mordor, tallonati dall'infido Gollum: Aragorn, Gimli e Legolas sono invece sulle tracce di Merry e Pipino, rapiti dagli Uruk-Hai di Saruman e in grave pericolo di vita. Attraverso alterne vicende, raggiungeranno la terra di Rohan e aiuteranno il Re Theoden nella sua guerra contro il traditore Saruman...",
+                    "popularity": 107.755,
+                    "poster_path": "../../public/venom.jpg",
                     "release_date": "2002-12-18",
                     "title": "Il Signore degli Anelli - Le due torri",
                     "video": false,
@@ -168,7 +208,7 @@ export default {
         <div class="card d-flex" v-show="index === activeImage" v-for="(carousel, index) in carouselProducts "
             :key="index">
             <div class="card-top">
-                <img :src="'https://image.tmdb.org/t/p/w342' + carousel.poster_path" alt="">
+                <img :src="carousel.poster_path" alt="">
             </div>
             <div class="card-detail">
                 <p>Titolo: {{ carousel.title }} </p>
@@ -206,7 +246,6 @@ export default {
 
 .card {
     position: relative;
-    max-width: 343px;
     flex-direction: row;
 }
 
@@ -229,11 +268,9 @@ export default {
 }
 
 .card-top {
-    height: 100%;
 
     & img {
-        height: 100%;
-        width: 342px
+        width: 85%;
     }
 }
 
