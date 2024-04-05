@@ -75,12 +75,12 @@ export default {
         z-index: 1;
         color: antiquewhite;
         flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         display: none;
         transition: opacity 0.5s;
-        text-align: center;
         overflow-y: auto;
+        text-align: center;
+        padding-top: 3rem;
 
     }
 
