@@ -50,12 +50,35 @@ export default {
 
 
         <div class="inputs d-flex">
-            <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchProducts"
-                @keyup.enter="search()">
+            <div class="search-wrapper">
+                <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv"
+                    v-model="state.searchProducts" @keyup.enter="search()">
+                <button id="search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+            <a href="">Bambini</a>
             <i class="fa-solid fa-bell"></i>
             <div class="account d-flex">
                 <img src="../../public/netflix-profile-pictures.jpg" alt="">
                 <i class="fa-solid fa-chevron-down"></i>
+                <div class="account-list d-flex">
+                    <div class="single-avatar d-flex">
+                        <img src="../../public/green-smile.png" alt="">
+                        <span>Papà</span>
+                    </div>
+                    <div class="single-avatar d-flex">
+                        <img src="../../public/laugh-woman.jpg" alt="">
+                        <span>Mamma</span>
+                    </div>
+                    <div class="single-avatar d-flex">
+                        <img src="../../public/penguin.png" alt="">
+                        <span>Kids</span>
+                    </div>
+                    <div class="single-avatar d-flex">
+                        <img src="../../public/chicken.png" alt="">
+                        <span>Giovanni</span>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -92,17 +115,45 @@ header {
 
 
     .inputs {
-        gap: 0.8rem;
+        gap: 0.65rem;
         align-items: center;
 
         & img {
             width: 40px;
+        }
+
+        #search {
+            border: none;
+            background-color: black;
+            cursor: pointer;
+            font-size: 1.3rem;
         }
     }
 
     .account {
         align-items: center;
         justify-content: center;
+        gap: 0.4rem;
+        position: relative;
+
+        .account-list {
+            display: none;
+            position: absolute;
+            top: 4rem;
+            flex-direction: column;
+            border: 0.1px solid white;
+            padding: 1rem;
+            gap: 0.5rem;
+            right: 0;
+            background-color: black;
+        }
+    }
+
+    .account:hover .account-list {
+        display: flex;
+    }
+
+    .single-avatar {
         gap: 0.4rem;
     }
 
