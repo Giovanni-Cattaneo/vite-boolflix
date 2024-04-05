@@ -47,7 +47,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style>
 header {
     display: flex;
     justify-content: space-between;
@@ -56,6 +56,10 @@ header {
     max-width: 1920px;
     margin: auto;
     padding: 0.3rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
 
     .inputs {
         gap: 0.8rem;

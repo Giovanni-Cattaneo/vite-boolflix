@@ -26,9 +26,9 @@ export default {
 </script>
 
 <template>
-  <header>
-    <appHeader />
-  </header>
+
+  <appHeader />
+
 
 
   <main>
