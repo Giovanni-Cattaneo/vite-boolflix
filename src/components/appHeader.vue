@@ -35,7 +35,7 @@ export default {
 <template>
     <header>
         <div class="d-flex">
-            <img class="logo" src="../../public/Beats_Electronics_logo.svg.png" alt="">
+            <img class="logo" src="../../public/letter_red.png" alt="">
             <h2>{{ state.message }}</h2>
         </div>
 
@@ -78,6 +78,7 @@ header {
     .logo {
         width: 100px;
         margin-right: 0.4rem;
+        height: 100px;
     }
 }
 </style>
