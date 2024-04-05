@@ -2,11 +2,13 @@
 import { state } from './state.js'
 import appCard from "./components/appCard.vue";
 import appHeader from "./components/appHeader.vue"
+import appCarousel from './components/appCarousel.vue';
 
 export default {
   components: {
     appCard,
-    appHeader
+    appHeader,
+    appCarousel
   },
   data() {
     return {
@@ -27,6 +29,7 @@ export default {
   <appHeader />
 
   <main>
+    <appCarousel />
     <appCard />
   </main>
 
