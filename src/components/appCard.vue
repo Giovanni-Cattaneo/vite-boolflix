@@ -46,6 +46,7 @@ export default {
     flex-wrap: wrap;
     gap: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
 
     .card {
         border: 0.5px solid white;

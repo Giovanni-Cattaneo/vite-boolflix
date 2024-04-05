@@ -7,6 +7,8 @@ export default {
         return {
             state,
             activeImage: 0,
+            groupItems: 5,
+
             carouselProducts: [
                 {
                     "adult": false,
@@ -163,7 +165,8 @@ export default {
                 <img :src="'https://image.tmdb.org/t/p/w342' + carousel.poster_path" alt="">
             </div>
         </div> -->
-        <div class="card d-flex" v-for="(carousel, index) in carouselProducts " :key="index">
+        <div class="card d-flex" v-show="index === activeImage" v-for="(carousel, index) in carouselProducts "
+            :key="index">
             <div class="card-top">
                 <img :src="'https://image.tmdb.org/t/p/w342' + carousel.poster_path" alt="">
             </div>
@@ -193,6 +196,7 @@ export default {
 .carousel {
     text-align: center;
     justify-content: center;
+    margin-bottom: 3rem;
 
 
     & h2 {
