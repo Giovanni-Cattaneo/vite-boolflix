@@ -37,12 +37,27 @@ export default {
         <div class="d-flex">
             <img class="logo" src="../../public/letter_red.png" alt="">
             <h2>{{ state.message }}</h2>
+            <div class="categories d-flex">
+                <a href="">Home</a>
+                <a href="">Serie Tv</a>
+                <a href="">Film</a>
+                <a href="">Originali</a>
+                <a href="">Aggiunti di recente</a>
+                <a href="">La mia lista</a>
+            </div>
         </div>
+
+
 
         <div class="inputs d-flex">
             <input type="search" name="" id="" placeholder="cerca il tuo film o serie tv" v-model="state.searchProducts"
                 @keyup.enter="search()">
-            <button @click="search()">Vai</button>
+            <i class="fa-solid fa-bell"></i>
+            <div class="account d-flex">
+                <img src="../../public/netflix-profile-pictures.jpg" alt="">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
         </div>
     </header>
 </template>
@@ -60,9 +75,35 @@ header {
     width: 100%;
     z-index: 10;
 
+    .categories {
+        gap: 0.5rem;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
 
     .inputs {
         gap: 0.8rem;
+        align-items: center;
+
+        & img {
+            width: 40px;
+        }
+    }
+
+    .account {
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
     }
 
     & h2 {

@@ -2,7 +2,7 @@ import { reactive } from 'vue'
 import axios from 'axios';
 
 export const state = reactive({
-    message: "Welcome to Boolflix",
+    message: "Boolflix",
     movies: '',
     tvSeries: '',
     products: '',
