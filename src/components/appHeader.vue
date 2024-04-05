@@ -77,7 +77,7 @@ header {
 
     .logo {
         width: 100px;
-        margin-right: 0.4rem;
+        margin-right: 1.5rem;
         height: 100px;
     }
 }
