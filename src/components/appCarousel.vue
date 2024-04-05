@@ -70,61 +70,64 @@ export default {
                 },
                 {
                     "adult": false,
-                    "backdrop_path": "/myoUeMqGXmsji0YLQB6vPw7llLm.jpg",
+                    "backdrop_path": "/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg",
                     "genre_ids": [
-                        99
+                        12,
+                        14,
+                        28
                     ],
-                    "id": 373801,
+                    "id": 120,
                     "original_language": "en",
-                    "original_title": "Back to the Present: The Special",
-                    "overview": "\"Ritorno al futuro\" di Steven Spielberg è stato un enorme successo al botteghino nel 1985 che alla fine ha portato a due sequel. Nel 1989, in \"Ritorno al futuro - Parte II\", Michael J. Fox aka Marty Mc Fly e Christopher Lloyd aka DOC, viaggiano nel futuro fino al 21 ottobre 2015. All'epoca, le folli invenzioni del film sembravano tutt'altro che realizzabili, ma non sapevamo che sarebbero state così vicine alla realtà!",
-                    "popularity": 4.415,
-                    "poster_path": "/41A2syHG6khv7Ij0xmw5OzyRhmQ.jpg",
-                    "release_date": "2015-10-18",
-                    "title": "Ritorno al futuro - 30 anni dopo",
+                    "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+                    "overview": "Bilbo Baggins ha deciso di celebrare il suo centoundicesimo compleanno in maniera molto particolare;alla fine della festa, abbandona parenti, amici, conoscenti e il suo affezionato nipote Frodo, cui lascia ogni cosa. Lo stregone Gandalf insiste perché lo hobbit lasci a Frodo anche il suo anello magico, su cui intende tenere un occhio vigile e fare alcune ricerche, perché potrebbe celare un mistero più inquietante di quanto non sembri. E così è; quello di Bilbo è l'Unico Anello, l'Anello per domarli, il cuore del potere del malefico Signore Oscuro Sauron, che sta tornando a tessere le sue trame di conquista e distruzione. Per impedirgli di vedere realizzato il suo sanguinoso disegno, l'anello dovrà essere distrutto, cosa possibile soltanto nella fornace di Monte Fato, dove Sauron, secoli prima, lo forgiò.",
+                    "popularity": 147.99,
+                    "poster_path": "/xvjOBWfm32skiwIAU2iocb6fyC8.jpg",
+                    "release_date": "2001-12-18",
+                    "title": "Il Signore degli Anelli - La compagnia dell'anello",
                     "video": false,
-                    "vote_average": 7.8,
-                    "vote_count": 14
+                    "vote_average": 8.411,
+                    "vote_count": 24170
                 },
                 {
                     "adult": false,
-                    "backdrop_path": "/jA09e9RryWU4zKOTxTDKVbnFHlE.jpg",
+                    "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
                     "genre_ids": [
-                        99
+                        12,
+                        14,
+                        28
                     ],
-                    "id": 244214,
+                    "id": 122,
                     "original_language": "en",
-                    "original_title": "Star Trek: Secrets of the Universe",
-                    "overview": "È possibile costruire la nostra nave stellare Enterprise? Viaggeremo mai tra le stelle così facilmente come in Star Trek? Il nuovo film di J.J. Abrams, \"Star Trek - Into Darkness\", arriva sullo schermo in un'età d'oro di scoperte scientifiche.  HISTORY è lì, e offre agli spettatori uno sguardo profondo del dietro le quinte, sul set e nella scienza: nuovi incredibili esopianeti, la fisica del motore Warp e le idee dietro come potremmo un giorno vivere in un universo di Star Trek.",
-                    "popularity": 1.032,
-                    "poster_path": "/4qLv4R3eaTpzL8tbRwRGFzUzIzY.jpg",
-                    "release_date": "2013-05-16",
-                    "title": "Star Trek - Ritorno al futuro",
+                    "original_title": "The Lord of the Rings: The Return of the King",
+                    "overview": "Le forze di Sauron hanno attaccato la capitale di Gondor, Minas Tirith, nel suo assedio finale contro l'umanità. Tenuto da un debole sovrintendente, quello che una volta era un fastoso regno non ha mai avuto così bisogno del proprio re. Mentre Gandalf tenta disperatamente di spingere lo smembrato esercito di Gondor ad agire, Thèoden si unisce ai guerrieri di Rohan per combattere assieme a loro. Pieno di coraggio e di appassionata lealtà, l'esercito degli umani non riesce però a tener testa alle numerosissime legioni nemiche che giungono su tutto il regno. Ogni vittoria è accompagnata da un grande sacrificio. Malgrado le numerose perdite, la Compagnia si lancia verso la più grande battaglia mai affrontata, unita dall'unico scopo di riuscire a tenere Sauron distratto e dare a Frodo una occasione per portare a termine la sua spedizione...",
+                    "popularity": 122.714,
+                    "poster_path": "/96XilLzI7bijsCG4l7oW6I62oad.jpg",
+                    "release_date": "2003-12-01",
+                    "title": "Il Signore degli Anelli - Il ritorno del re",
                     "video": false,
-                    "vote_average": 6.2,
-                    "vote_count": 4
+                    "vote_average": 8.479,
+                    "vote_count": 23230
                 },
                 {
                     "adult": false,
-                    "backdrop_path": "/scNssnn5PN99fBODNzxF5qN4Iw8.jpg",
+                    "backdrop_path": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg",
                     "genre_ids": [
-                        16,
-                        10751,
-                        28,
-                        878
+                        12,
+                        14,
+                        28
                     ],
-                    "id": 16234,
+                    "id": 121,
                     "original_language": "en",
-                    "original_title": "Batman Beyond: Return of the Joker",
-                    "overview": "Gotham City, 2039: il Joker, capo della gang di strada dei Jokerz, annuncia il suo ritorno, dopo aver rubato armi ad alta tecnologia alle imprese Wayne. Dietro la maschera di Batman c'è il giovane Terry McGinnis, adolescente dal passato turbolento, divenuto pupillo di un Bruce Wayne troppo vecchio e malato per combattere il crimine. Terry conosce Bruce salvandogli la vita nella rapina compiuta dai Jokerz e, in seguito, prende il suo posto mettendosi sulle tracce del nemico storico...",
-                    "popularity": 23.544,
-                    "poster_path": "/oNFZW1JD5q8uj8UL5Vap8ei53WN.jpg",
-                    "release_date": "2000-12-12",
-                    "title": "Batman of the Future - Il ritorno del Joker",
+                    "original_title": "The Lord of the Rings: The Two Towers",
+                    "overview": "La Compagnia dell'Anello è divisa, e ogni speranza è riposta ora in Frodo e Sam, che stanno tentando di attraversare non visti i confini di Mordor, tallonati dall'infido Gollum: Aragorn, Gimli e Legolas sono invece sulle tracce di Merry e Pipino, rapiti dagli Uruk-Hai di Saruman e in grave pericolo di vita. Attraverso alterne vicende, raggiungeranno la terra di Rohan e aiuteranno il Re Theoden nella sua guerra contro il traditore Saruman...",
+                    "popularity": 107.755,
+                    "poster_path": "/fVKewiBPcY2dQujYEsnQmQ7lfRZ.jpg",
+                    "release_date": "2002-12-18",
+                    "title": "Il Signore degli Anelli - Le due torri",
                     "video": false,
-                    "vote_average": 7.294,
-                    "vote_count": 1062
-                }
+                    "vote_average": 8.394,
+                    "vote_count": 21003
+                },
             ],
         }
     },
@@ -152,19 +155,115 @@ export default {
 
 <template>
     <div class="carousel">
+        <h2>Ecco gli ultimi tittoli aggiunti:</h2>
         <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="next" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="slider" tabindex="0">
-            <div v-for="(carousel, index) in carouselProducts" v-bind:key="index" v-show="index === activeImage">
-                <img :src="'https://image.tmdb.org/t/p/w500' + carousel.poster_path" alt="">
+        <!-- <div class="slider d-flex" tabindex="0">
+            <div v-for="(carousel, index) in carouselProducts" v-bind:key="index">
+                <img :src="'https://image.tmdb.org/t/p/w342' + carousel.poster_path" alt="">
             </div>
+        </div> -->
+        <div class="card d-flex" v-for="(carousel, index) in carouselProducts " :key="index">
+            <div class="card-top">
+                <img :src="'https://image.tmdb.org/t/p/w342' + carousel.poster_path" alt="">
+            </div>
+            <div class="card-detail">
+                <p>Titolo: {{ carousel.title }} </p>
+                <p>Titolo Originale: {{ carousel.original_title }} </p>
+                <span v-if="carousel.original_language in state.flags">
+                    <img class="flags" v-bind:src="state.flags[carousel.original_language]" alt="">
+                </span>
+                <p v-else> Lingua originale: {{ carousel.original_language }}</p>
+                <div class="star-container">
+                    <span v-for="n in Math.ceil(carousel.vote_average / 2)" :key="n">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span v-for="n in 5 - Math.ceil(carousel.vote_average / 2)">
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+                <p>{{ carousel.overview }}</p>
+            </div>
+
         </div>
     </div>
 </template>
 
 <style scoped>
-.prev,
+.carousel {
+    text-align: center;
+
+
+    & h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.card {
+    position: relative;
+}
+
+.card-detail {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.911);
+    z-index: 1;
+    color: antiquewhite;
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+    transition: opacity 0.5s;
+    overflow-y: auto;
+    text-align: center;
+    padding-top: 3rem;
+
+}
+
+.card-top {
+    height: 100%;
+
+    & img {
+        height: 100%;
+        width: 342px
+    }
+}
+
+.flags {
+    width: 100px;
+    height: 30px;
+}
+
+.card:hover .card-detail {
+    display: flex;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+.prev {
+    position: absolute;
+    left: 0.5rem;
+    top: 25rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: rgba(78, 78, 78, 0.445);
+    border: none;
+}
+
 .next {
     position: absolute;
+    right: 0.5rem;
+    top: 25rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: rgba(78, 78, 78, 0.445);
+    border: none;
+}
+
+.slider {
+    justify-content: center;
 }
 </style>
