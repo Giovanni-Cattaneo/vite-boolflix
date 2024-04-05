@@ -32,6 +32,7 @@ export default {
                         <i class="fa-regular fa-star"></i>
                     </span>
                 </div>
+                <p>{{ product.overview }}</p>
             </div>
 
         </div>
@@ -75,11 +76,11 @@ export default {
         color: antiquewhite;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 2rem;
         display: none;
         transition: opacity 0.5s;
         text-align: center;
+        overflow-y: auto;
 
     }
 
