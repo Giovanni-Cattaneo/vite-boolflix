@@ -26,7 +26,10 @@ export default {
 </script>
 
 <template>
-  <appHeader />
+  <header>
+    <appHeader />
+  </header>
+
 
   <main>
     <appCarousel />
