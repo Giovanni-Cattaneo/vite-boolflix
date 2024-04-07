@@ -70,23 +70,23 @@ export default {
                 },
                 {
                     "adult": false,
-                    "backdrop_path": "/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg",
+                    "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
                     "genre_ids": [
                         878,
                         28,
                         12
                     ],
-                    "id": 624860,
+                    "id": 24428,
                     "original_language": "en",
-                    "original_title": "The Matrix Resurrections",
-                    "overview": "Due realtà differenti caratterizzano il mondo: una rappresentata dalla vita di tutti i giorni e un'altra nascosta e inaccessibile. Per scoprire se la sua realtà è un costrutto fisico o mentale, per conoscere veramente se stesso, Mr. Anderson dovrà scegliere di seguire ancora una volta il Bianconiglio. E se Thomas, Neo, ha imparato qualcosa è che la scelta, pur essendo un'illusione, è ancora una volta la via d'uscita o di ingresso in Matrix. Ovviamente, Neo sa già cosa deve fare. Ma quello che ancora non sa è che Matrix è più forte, più sicura e più pericolosa che mai. Salvato da Matrix per diventare il salvatore dell'umanità, ancora una volta dovrà scegliere quale strada prendere.",
-                    "popularity": 70.699,
-                    "poster_path": "/sZCT1D5yLNVHarTpv157FaLzPCc.jpg",
-                    "release_date": "2021-12-16",
-                    "title": "Matrix Resurrections",
+                    "original_title": "The Avengers",
+                    "overview": "I supereroi più famosi si riuniscono in una squadra di personaggi Marvel leggendari come Iron Man, l'incredibile Hulk, Thor, Captain America, Occhio di Falco e Vedova Nera. Quando la comparsa di un nemico inatteso minaccia la tranquillità e la sicurezza del mondo, Nick Fury, direttore dell'agenzia internazionale per il mantenimento della pace conosciuta come S.H.I.E.L.D., si trova ad aver bisogno di una squadra che salvi il pianeta dall'orlo del disastro. Inizia così, da un capo all'altro della terra, un audace lavoro di reclutamento. Dopo aver riunito la squadra, Nick Fury e il suo fidato assistente, l'Agente Coulson, dovranno convincere i supereroi a convivere e lavorare insieme, utilizzando i loro incredibili poteri contro il pericoloso Loki che è riuscito ad accedere al Tesseract e ai suoi poteri illimitati.",
+                    "popularity": 119.348,
+                    "poster_path": "/mJwEvI0k75o1uRkd57ZbERazxzf.jpg",
+                    "release_date": "2012-04-25",
+                    "title": "The Avengers",
                     "video": false,
-                    "vote_average": 6.439,
-                    "vote_count": 5386
+                    "vote_average": 7.7,
+                    "vote_count": 29904
                 },
                 {
                     "adult": false,

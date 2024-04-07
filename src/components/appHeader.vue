@@ -97,7 +97,7 @@ header {
     padding: 0.3rem 2rem;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
 
     .categories {
         gap: 0.5rem;
