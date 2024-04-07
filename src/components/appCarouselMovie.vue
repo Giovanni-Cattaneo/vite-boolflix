@@ -6,7 +6,8 @@ export default {
     data() {
         return {
             state,
-            groupItems: 5,
+            groupItems: 4,
+            currentIndex: 0,
             movieCarousel: [
                 {
                     "adult": false,
@@ -255,43 +256,127 @@ export default {
     },
     methods: {
         prevGroup() {
-
+            this.currentIndex = (this.currentIndex - this.groupItems + this.movieCarousel.length) % this.movieCarousel.length;
         },
 
         nextGroup() {
-
+            this.currentIndex = (this.currentIndex + this.groupItems) % this.movieCarousel.length;
+        }
+    },
+    computed: {
+        slicedMovies() {
+            return this.movieCarousel.slice(this.currentIndex, this.currentIndex + this.groupItems);
         }
     }
 }
 </script>
 
 <template>
+    <h2>
+        Ecco i nostri film più amati
+    </h2>
     <div class="movieCarousel">
-        <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="card" v-for="(movie, id) in movieCarousel" :key="id">
+        <button class="prev" @click="prevGroup()"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next" @click="nextGroup()"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="card" v-for="(movie, id) in slicedMovies" :key="id">
             <div class="card-top">
-                <img :src="'https://image.tmdb.org/t/p/w342' + movie.poster_path" alt="">
+                <img :src="'https://image.tmdb.org/t/p/w300' + movie.poster_path" alt="">
             </div>
             <div class="card-detail">
-                <p>Titolo: {{ product.title }} </p>
-                <p>Titolo Originale: {{ product.original_title }} </p>
-                <span v-if="product.original_language in state.flags">
-                    <img class="flags" v-bind:src="state.flags[product.original_language]" alt="">
+                <p>Titolo: {{ movie.title }} </p>
+                <p>Titolo Originale: {{ movie.original_title }} </p>
+                <span v-if="movie.original_language in state.flags">
+                    <img class="flags" v-bind:src="state.flags[movie.original_language]" alt="">
                 </span>
-                <p v-else> Lingua originale: {{ product.original_language }}</p>
+                <p v-else> Lingua originale: {{ movie.original_language }}</p>
                 <div class="star-container">
-                    <span v-for="n in Math.ceil(product.vote_average / 2)" :key="n">
+                    <span v-for="n in Math.ceil(movie.vote_average / 2)" :key="n">
                         <i class="fa-solid fa-star"></i>
                     </span>
-                    <span v-for="n in 5 - Math.ceil(product.vote_average / 2)">
+                    <span v-for="n in 5 - Math.ceil(movie.vote_average / 2)">
                         <i class="fa-regular fa-star"></i>
                     </span>
                 </div>
-                <p>{{ product.overview }}</p>
+                <p>{{ movie.overview }}</p>
             </div>
         </div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.movieCarousel {
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    position: relative;
+
+    .prev {
+        position: absolute;
+        left: 0rem;
+        top: 13rem;
+        font-size: 2rem;
+        padding: 0.5rem;
+        background-color: rgba(78, 78, 78, 0.671);
+        border: none;
+        z-index: 100;
+    }
+
+
+    .next {
+        position: absolute;
+        right: 0rem;
+        top: 13rem;
+        font-size: 2rem;
+        padding: 0.5rem;
+        background-color: rgba(78, 78, 78, 0.445);
+        border: none;
+        z-index: 10;
+    }
+
+    .card {
+        border: 0.5px solid white;
+        position: relative;
+    }
+
+    .card-top {
+        height: 100%;
+
+        & img {
+            height: 100%;
+            width: 300px
+        }
+    }
+
+    .flags {
+        width: 100px;
+        height: 30px;
+    }
+
+    .card-detail {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.911);
+        z-index: 1;
+        color: antiquewhite;
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+        transition: opacity 0.5s;
+        overflow-y: auto;
+        text-align: center;
+        padding-top: 3rem;
+
+    }
+
+    .card:hover .card-detail {
+        display: flex;
+    }
+
+    .fa-star {
+        color: goldenrod;
+    }
+}
+</style>
