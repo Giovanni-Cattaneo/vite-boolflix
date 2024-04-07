@@ -14,18 +14,18 @@ export default {
                     "adult": false,
                     "backdrop_path": "/5bzPWQ2dFUl2aZKkp7ILJVVkRed.jpg",
                     "genre_ids": [
+                        878,
                         12,
-                        35,
-                        878
+                        28
                     ],
-                    "id": 105,
+                    "id": 76600,
                     "original_language": "en",
-                    "original_title": "Back to the Future",
-                    "overview": "Marty McFly è stato catapultato per errore nel 1955, grazie alla macchina del tempo ideata dal suo amico scienziato Doc. Non avendo più \"carburante\" per poter tornare nel futuro si rivolge alla versione più giovane di Doc, che nonostante l'incredulità iniziale si farà in quattro per aiutarlo. Ma nel 1955 non è solo Doc ad essere più giovane, Marty infatti si imbatte casualmente nei suoi genitori, all'epoca teenager, ma l'incontro aggiungerà altri problemi.",
+                    "original_title": "Avatar: The Way of Water",
+                    "overview": "Jake vive felicemente la sua vita insieme a Neytiri ma Pandora nasconde ancora numerosi misteri. Quando una vecchia, familiare minaccia torna ad affacciarsi per terminare quel che era stato iniziato un tempo, Jake dovrà nuovamente collaborare con l'esercito dei Na'vi per proteggere il loro incredibile pianeta. In veste di patriarca si ritroverà a dover combattere una dura guerra contro gli umani. Jake e Neytiri saranno pertanto costretti a lasciare la loro casa ed esplorare varie regioni di Pandora...",
                     "popularity": 100.149,
                     "poster_path": "../../public/avatar_wallpaper.jpg",
-                    "release_date": "1985-07-03",
-                    "title": "Ritorno al futuro",
+                    "release_date": "2022-12-14",
+                    "title": "Avatar La via dell'acqua",
                     "video": false,
                     "vote_average": 8.3,
                     "vote_count": 19156
@@ -195,7 +195,7 @@ export default {
 }
 </script>
 
-<template>
+<template >
     <h2>Ecco gli ultimi tittoli aggiunti:</h2>
     <div class="carousel d-flex">
         <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -236,7 +236,7 @@ export default {
 .carousel {
     text-align: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 15rem;
 
 
     & h2 {
@@ -254,7 +254,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.911);
+    background-color: rgba(0, 0, 0, 0.61);
     z-index: 1;
     color: antiquewhite;
     flex-direction: column;

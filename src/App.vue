@@ -32,7 +32,7 @@ export default {
 
 
   <main>
-    <appCarousel />
+    <appCarousel v-if="state.visible" />
     <appCard />
   </main>
 

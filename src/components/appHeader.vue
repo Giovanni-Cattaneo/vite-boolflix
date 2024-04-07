@@ -10,6 +10,7 @@ export default {
     },
     methods: {
         search() {
+            state.visible = false
             this.findFlags()
 
             state.api_movie_url = `https://api.themoviedb.org/3/search/movie?api_key=4c286d2dce5da2b32592ae9e96dd9f32&language=it-IT&query=${state.searchProducts.split(' ').join('+')}`

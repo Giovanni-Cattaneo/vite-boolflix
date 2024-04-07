@@ -6,6 +6,7 @@ export const state = reactive({
     movies: '',
     tvSeries: '',
     products: '',
+    visible: true,
     flags: {
         en: '../public/flags/1x1/us.svg',
         it: '../public/flags/1x1/it.svg',
