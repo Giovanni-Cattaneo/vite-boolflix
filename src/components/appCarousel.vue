@@ -195,7 +195,7 @@ export default {
 }
 </script>
 
-<template >
+<template>
     <h2>Ecco gli ultimi tittoli aggiunti:</h2>
     <div class="carousel d-flex">
         <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -236,7 +236,7 @@ export default {
 .carousel {
     text-align: center;
     justify-content: center;
-    margin-bottom: 15rem;
+    margin-bottom: 3rem;
 
 
     & h2 {

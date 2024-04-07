@@ -4,13 +4,16 @@ import appCard from "./components/appCard.vue";
 import appHeader from "./components/appHeader.vue"
 import appCarousel from './components/appCarousel.vue';
 import appCarouselMovie from './components/appCarouselMovie.vue';
+import appCarouselTv from './components/appCarouselTv.vue';
 
 export default {
   components: {
     appCard,
     appHeader,
     appCarousel,
-    appCarouselMovie
+    appCarouselMovie,
+    appCarouselTv
+
   },
   data() {
     return {
@@ -36,7 +39,8 @@ export default {
   <main>
     <appCarousel v-if="state.visible" />
     <appCard />
-    <appCarouselMovie />
+    <appCarouselMovie v-if="state.visible" />
+    <appCarouselTv v-if="state.visible" />
   </main>
 
 

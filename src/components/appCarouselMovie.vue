@@ -6,7 +6,7 @@ export default {
     data() {
         return {
             state,
-            groupItems: 4,
+            groupItems: 6,
             currentIndex: 0,
             movieCarousel: [
                 {
@@ -27,6 +27,26 @@ export default {
                     "video": false,
                     "vote_average": 8.214,
                     "vote_count": 24700
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/wXsQvli6tWqja51pYxXNG1LFIGV.jpg",
+                    "genre_ids": [
+                        10751,
+                        16,
+                        18
+                    ],
+                    "id": 8587,
+                    "original_language": "en",
+                    "original_title": "The Lion King",
+                    "overview": "Convinto di essere responsabile della morte del padre re Mufasa, il piccolo leoncino Simba si allontana dalla sua terra. Accolto e allevato dal suricato Timon e dal facocero Pumbaa, Simba cresce cercando di dimenticare il passato. È ritrovato da Nala, sua vecchia compagna di giochi, e Rafiki, babbuino sciamano, che lo convincono a tornare per scacciare l'usurpatore Scar.",
+                    "popularity": 117.998,
+                    "poster_path": "/8FfIaBWb1IEmUf2c71IMGwz7wXv.jpg",
+                    "release_date": "1994-06-24",
+                    "title": "Il re leone",
+                    "video": false,
+                    "vote_average": 8.257,
+                    "vote_count": 17593
                 },
                 {
                     "adult": false,
@@ -192,6 +212,26 @@ export default {
                 },
                 {
                     "adult": false,
+                    "backdrop_path": "/xBDE2d6HM1aBKQRu4IT7SfPD9fs.jpg",
+                    "genre_ids": [
+                        18,
+                        9648,
+                        878
+                    ],
+                    "id": 1124,
+                    "original_language": "en",
+                    "original_title": "The Prestige",
+                    "overview": "Due giovani maghi apprendisti, Robert Angier e Alfred Borden, vengono istruiti e seguiti da Cutter, un ingegnere illusionista ed ex mago, ma durante un numero in cui una donna viene legata e messa in una cassa di vetro piena d'acqua, qualcosa va storto e Angier incolperà l'amico dell'accaduto, tentando di vendicarsi. Inizia così un crudele gioco tra i due uomini su chi sia il migliore e la rivalità si trasformerà pian piano in ossessione.",
+                    "popularity": 54.51,
+                    "poster_path": "/xKsiJimxRa44FArhlfGHnylrT0i.jpg",
+                    "release_date": "2006-10-19",
+                    "title": "The Prestige",
+                    "video": false,
+                    "vote_average": 8.2,
+                    "vote_count": 15342
+                },
+                {
+                    "adult": false,
                     "backdrop_path": "/wmsePXV2z1b6ecXuKKrFbG0Q92P.jpg",
                     "genre_ids": [
                         18
@@ -248,6 +288,88 @@ export default {
                     "video": false,
                     "vote_average": 8.167,
                     "vote_count": 14319
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/fydUcbkqLyESCFa9U5XKqi8dIVj.jpg",
+                    "genre_ids": [
+                        16,
+                        10751,
+                        12,
+                        14
+                    ],
+                    "id": 109445,
+                    "original_language": "en",
+                    "original_title": "Frozen",
+                    "overview": "Nell'immaginario regno di Arendelle, situato su un fiordo, vivono due sorelle unite da un grande affetto. Un giorno, però, il magico potere di Elsa di comandare la neve e il ghiaccio per poco non uccide la più piccola Anna. Cresciuta nel dolore di quel ricordo, Elsa chiude le porte del palazzo e allontana da sé l'amata sorella per lunghi anni, fino al giorno della sua incoronazione a regina. Ma ancora una volta l'emozione prevale, scatena la magia e fa piombare il regno in un inverno senza fine. Sarà Anna, con l'aiuto del nuovo amico Kristoff e della sua renna Sven, a mettersi alla ricerca di Elsa, fuggita lontano da tutti, per chiederle di tornare e portare l'atteso disgelo.",
+                    "popularity": 95.177,
+                    "poster_path": "/kWsuNQ3z9aj7Bu8M7X90b30NjAw.jpg",
+                    "release_date": "2013-11-20",
+                    "title": "Frozen - Il regno di ghiaccio",
+                    "video": false,
+                    "vote_average": 7.247,
+                    "vote_count": 15990
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/3s9O5af2xWKWR5JzP2iJZpZeQQg.jpg",
+                    "genre_ids": [
+                        28,
+                        12,
+                        878,
+                        53
+                    ],
+                    "id": 351286,
+                    "original_language": "en",
+                    "original_title": "Jurassic World: Fallen Kingdom",
+                    "overview": "Sono passati tre anni da quando il parco tematico di Jurassic World è stato distrutto dai dinosauri scappati dalle gabbie di contenimento; Isla Nublar adesso è un luogo selvaggio abbandonato dagli umani dove i dinosauri sopravvissuti cercano riparo nella giungla.  Al risveglio del vulcano, inattivo fino a quel momento, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) intraprendono una campagna per salvaguardare le specie di dinosauri ancora in vita da un evento di distruzione di massa. Owen è intento a cercare Blue, il suo principale velociraptor ancora disperso nella foresta, mentre Claire nel frattempo ha sviluppato un rispetto nei confronti di queste creature, divenute ormai la sua missione.  Giunti sull’isola proprio mentre la lava inizia a scorrere i due scoprono anche una cospirazione di portata globale che potrebbe far ritornare l’intero pianeta a un rovinoso stato di disordine come non si vedeva dalla preistoria.",
+                    "popularity": 94.27,
+                    "poster_path": "/4iGHioQuva4Q3KkeYNgohMP9kaR.jpg",
+                    "release_date": "2018-06-06",
+                    "title": "Jurassic World – Il regno distrutto",
+                    "video": false,
+                    "vote_average": 6.546,
+                    "vote_count": 11379
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/bckxSN9ueOgm0gJpVJmPQrecWul.jpg",
+                    "genre_ids": [
+                        28,
+                        12,
+                        14
+                    ],
+                    "id": 572802,
+                    "original_language": "en",
+                    "original_title": "Aquaman and the Lost Kingdom",
+                    "overview": "Non riuscendo a sconfiggere Aquaman la prima volta, Black Manta, ancora spinto dal bisogno di vendicare la morte di suo padre, non si fermerà davanti a nulla pur di annientare Aquaman una volta per tutte. Questa volta Black Manta, in possesso del potere del mitico Tridente Nero, che scatena una forza antica e malevola, è più temibile che mai. Per sconfiggerlo Aquaman si rivolgerà al fratello imprigionato Orm, l'ex re di Atlantide, per forgiare un'improbabile alleanza. Insieme dovranno mettere da parte le loro divergenze per proteggere il loro regno e salvare la famiglia di Aquaman, e il mondo intero, da una distruzione irreversibile.",
+                    "popularity": 281.385,
+                    "poster_path": "/yv77pBEJa3yKvv3qRQHJZfu1jci.jpg",
+                    "release_date": "2023-12-20",
+                    "title": "Aquaman e il regno perduto",
+                    "video": false,
+                    "vote_average": 6.81,
+                    "vote_count": 2203
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/uLhWh1pggjIiQ1DpL0DvaIgERQR.jpg",
+                    "genre_ids": [
+                        878,
+                        12,
+                        28
+                    ],
+                    "id": 653346,
+                    "original_language": "en",
+                    "original_title": "Kingdom of the Planet of the Apes",
+                    "overview": "Diverse generazioni nel futuro dopo il regno di Cesare, le scimmie sono ora la specie dominante che vive armoniosamente e gli umani sono stati ridotti a vivere nell'ombra. Mentre un nuovo tirannico capo scimmia costruisce il suo impero, una giovane scimmia intraprende un viaggio straziante che la porterà a mettere in discussione tutto ciò che ha conosciuto del passato e a fare delle scelte che definiranno un futuro sia per le scimmie che per gli umani.",
+                    "popularity": 207.317,
+                    "poster_path": "/nHAmd6yp025PqjHGD3VzfBssxFp.jpg",
+                    "release_date": "2024-05-08",
+                    "title": "Il regno del pianeta delle scimmie",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 0
                 },
 
 
@@ -306,10 +428,12 @@ export default {
 <style scoped>
 .movieCarousel {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     position: relative;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 
     .prev {
         position: absolute;
@@ -317,7 +441,7 @@ export default {
         top: 13rem;
         font-size: 2rem;
         padding: 0.5rem;
-        background-color: rgba(78, 78, 78, 0.671);
+        background-color: rgba(78, 78, 78, 0.411);
         border: none;
         z-index: 100;
     }
@@ -367,6 +491,7 @@ export default {
         transition: opacity 0.5s;
         overflow-y: auto;
         text-align: center;
+        padding: 0.5rem;
         padding-top: 3rem;
 
     }
