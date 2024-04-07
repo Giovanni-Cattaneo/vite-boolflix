@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div class="container" v-if="state.products.length > 0">
+    <div class="container">
         <div class="card" v-for="product in state.products" :key="product.id">
             <div class="card-top">
                 <img :src="'https://image.tmdb.org/t/p/w342' + product.poster_path" alt="">
@@ -37,7 +37,6 @@ export default {
 
         </div>
     </div>
-    <span v-else>Spiacente non ci sono titoli corrispondenti alla tua richiesta</span>
 </template>
 
 <style scoped>
