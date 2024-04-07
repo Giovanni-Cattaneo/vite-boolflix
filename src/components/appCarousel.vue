@@ -196,7 +196,7 @@ export default {
 </script>
 
 <template>
-    <h2>Ecco gli ultimi tittoli aggiunti:</h2>
+    <h2>Ecco gli ultimi titoli aggiunti:</h2>
     <div class="carousel d-flex">
         <button class="prev" @click="prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="next" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
